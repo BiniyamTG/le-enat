@@ -10,9 +10,11 @@ body {
 
 .container {
     text-align: center;
+    height: 100vh; /* Set container to the full viewport height */
 }
 
 video {
+    max-height: 100%;
     width: auto;
-    max-height: 100vh; /* Ensures the video doesn't exceed the viewport height */
+    object-fit: contain; /* Ensure video scales proportionally within the container */
 }
